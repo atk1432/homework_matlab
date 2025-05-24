@@ -29,4 +29,4 @@ S3 = sumblk('y = og3 + og4');
 
 sys = connect(G1, G2, G3, G4, H1, H2, S1, S2, S3, 'r', 'y');
 % minreal(tf(sys))
-ltiview({'step';'impulse';'nyquist';'bode'}, sys)
+ltiview({'step';'impulse';'nyquist';'bode'}, minreal(sys))
